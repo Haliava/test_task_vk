@@ -1,0 +1,72 @@
+.root {
+    max-width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail {
+    min-width: 200px;
+    min-height: 200px;
+    width: 25vw;
+    height: 25vw;
+    background-size: cover;
+}
+
+.pricesRow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prices {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    height: 30px;
+    gap: 4px;
+}
+
+.currentPrice {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.previousPrice {
+    position: relative;
+    color: #99a3ae;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.previousPrice::before {
+    background: #99a3ae;
+    content: "";
+    display: block;
+    height: 1px;
+    position: absolute;
+    width: 110%;
+    top: 50%;
+    left: 0;
+    transform: rotate(-10deg);
+}
+
+.discountPercentage {
+    color: #f91155;
+    font-size: 14px;
+}
+
+.cartIcon {
+    padding: 0 !important;
+}
+
+.title {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.actionButtonsRow {
+    display: flex;
+}
